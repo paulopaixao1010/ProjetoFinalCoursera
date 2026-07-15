@@ -11,7 +11,7 @@ function Footer() {
           <img src={logoLemon} alt='Logo Little Lemon'/>
           
           <nav className='footerNav'>
-            <h3 className='footerTitle'>Doormat Navigation</h3>
+            <h3 className='text-secondary'>Doormat Navigation</h3>
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
@@ -27,7 +27,7 @@ function Footer() {
             <span className='footerContacts'>Email</span>
           </section>
           <section id='socialLinks'>
-            <h3 className='footerTitle'>Social Media Links</h3>
+            <h3 className="text-secondary">Social Media Links</h3>
             <a href='#'>Address</a>
             <a href='#'>Phone Number</a>
             <a href='#'>Email</a>

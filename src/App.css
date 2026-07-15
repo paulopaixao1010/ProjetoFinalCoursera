@@ -5,49 +5,124 @@
 }
 
 h1{
-    font-size: 64px;     /* 40pt convertido para a web */
-    font-weight: 400;    /* Regular */
-    margin-bottom: 8px;  /* Mantém perto do elemento seguinte, como pede a ficha */
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1;
 }
 
-h2 {
-  font-size: 53px;     /* 40pt convertido para a web */
-  font-weight: 400;    /* Regular */
-  margin-bottom: 8px;  /* Mantém perto do elemento seguinte, como pede a ficha */
+/* SUB TITLE */
+h2{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: .3rem;
 }
 
-/* CARD TITLE */
-h3 {
-  font-size: 24px;     /* 18pt convertido para a web */
-  font-weight: 700;    /* Bold / Negrito */
-  color: #495E57;
+/* CARD / SECTION TITLES */
+h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3;
 }
 
-/* PARAGRAPH TEXT */
-p {
-  font-size: 21px;     /* 16pt convertido para a web */
-  font-weight: 400;    /* Regular */
-  line-height: 1.5;    /* Altura de linha exigida na ficha */
-  max-width: 65ch;     /* Limita a largura para garantir leitura confortável */
-  
-  /* Força todo o texto a encostar à esquerda */
-  text-align: left;    
-  margin-left: 0;      
-  margin-right: auto;
+/* BODY TEXT */
+p{
+    font-size:16px;
+    font-weight:400;
+    line-height:1.5;
+    max-width:65ch;
+    text-align: left;
+}
+
+/* LEAD TEXT */
+.lead-text{
+    font-size:18px;
+    font-weight:500;
+    line-height:1.5;
+}
+
+/* HIGHLIGHT (preços) */
+.highlight-text{
+    font-size:16px;
+    font-weight:600;
+}
+
+/* LINKS */
+a{
+    font-size:16px;
+    font-weight:700;
+}
+
+/* BOTÕES */
+button{
+    font-size:18px;
+    font-weight:700;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #F4CE14;
+    border: none;
+}
+
+button:hover{
+    background-color: #EE9972;
 }
 
 
-.lead-text {
-  font-size: 24px;     /* 18pt */
-  font-weight: 500;    /* Medium */
+/* TEXT COLORS */
+
+.text-primary{
+    color:#495E57;
 }
 
-/* HIGHLIGHT TEXT - Usar em preços ou etiquetas */
-.highlight-text {
-  font-size: 16px;     /* 16pt */
-  font-weight: 600;    /* Medium */
-  color: #EE9972;
+.text-secondary{
+    color:#F4CE14;
 }
+
+.text-accent{
+    color:#EE9972;
+}
+
+.text-light{
+    color:#F4F4F4;
+}
+
+.text-dark{
+    color:#333333;
+}
+
+.text-white{
+    color:#FFFFFF;
+}
+
+
+.bg-primary{
+    background:#495E57;
+}
+
+.bg-secondary{
+    background:#F4CE14;
+}
+
+.bg-accent{
+    background:#EE9972;
+}
+
+.bg-light{
+    background:#EDEFEE;
+}
+
+.bg-highlight{
+    background:#FBDABB;
+}
+
+.bg-dark{
+    background:#333333;
+}
+
+.bg-white{
+    background:#FFFFFF;
+}
+
 
 .container {
     max-width: 925px;
@@ -82,6 +157,12 @@ nav a {
   font-weight: 600;
 }
 
+nav a:hover {
+  text-decoration: none;
+  color: #F4CE14;
+  font-weight: 600;
+}
+
 .heroBackground{
     background-color:#495E57;
     width:100%;
@@ -94,14 +175,6 @@ nav a {
     grid-template-columns:1fr 1fr;
     align-items:center;
     padding:40px 0;
-}
-
-#heroSection h1{
-    color: #F4CE14;
-}
-
-#heroSection h2,p{
-    color: #ffffff;
 }
 
 .heroText{
@@ -126,13 +199,6 @@ nav a {
     border-radius: 16px;
 }
 
-button{
-    padding: 10px;
-    border-radius: 12px;
-    background-color: #F4CE14;
-    border: none;
-    font-weight: 600;
-}
 
 .specialsHeader{
     display: flex;
@@ -198,7 +264,7 @@ button{
   font-weight: 700;
   color: #111;
 }
-
+/*
 .cardDescription p {
   font-size: 16px;
   font-weight: 400;
@@ -214,12 +280,19 @@ button{
   color: #111;
   font-weight: 700;
   margin-top: auto; 
+}*/
+.cardDescription a {
+  align-self: flex-start; 
 }
 
 .cardDescription a:hover {
   text-decoration: underline;
 }
 
+
+#testimonials{
+    padding: 20px 0;
+}
 
 #reviews{
     display: grid;
@@ -260,6 +333,42 @@ button{
     gap: 10px;
     align-items: center;
     justify-content: center;
+}
+
+#about .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.aboutImages{
+    position: relative;
+    width: 380px;
+    height: 360px;
+    justify-self: end;
+}
+
+.imageLeft{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.imageRight{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    z-index: 2;
 }
 
 
@@ -309,17 +418,24 @@ footer section{
   font-weight: 500;
 }
 
+.footerNav a:hover {
+  color: #111;
+  font-weight: 500;
+}
+
 footer img{
     width: 80px;
 }
 
-.footerTitle{
-    color: #fff;
-}
 
 #socialLinks a{
     text-decoration: none;
     color: #fff;
+    font-weight: 500;
+}
+
+#socialLinks a:hover{
+    color: #111;
     font-weight: 500;
 }
 

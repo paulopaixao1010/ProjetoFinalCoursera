@@ -7,9 +7,9 @@ function CallToAction() {
         <div className="container">
             <section id="heroSection">
             <div className="heroText">
-                <h1>Little Lemon</h1>
-                <h2>Chicago</h2>
-                <p className="lead-text">
+                <h1 className='text-secondary'>Little Lemon</h1>
+                <h2 className='text-white'>Chicago</h2>
+                <p className="lead-text text-white">
                 We are a family owned Mediterranian restaurant, focused on traditional recipes width a moderntwist
                 </p>
                 <button>Reserve a table</button>
