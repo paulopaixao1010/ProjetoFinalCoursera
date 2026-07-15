@@ -1,17 +1,18 @@
-
-import './App.css'
 import CallToAction from "./CallToAction";
 import Specials from "./Specials";
-import CustomersSay from './CustomersSay';
+import CustomersSay from "./CustomersSay";
+import Chicago from "./Chicago"
 
-function Main() {
+
+function Homepage() {
   return (
-    <main>
+    <>
       <CallToAction />
       <Specials />
       <CustomersSay />
-    </main>
+      <Chicago />
+    </>
   );
 }
 
-export default Main;
+export default Homepage;
