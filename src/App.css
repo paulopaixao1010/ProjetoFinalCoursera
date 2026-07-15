@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+h1{
+    font-size: 64px;     /* 40pt convertido para a web */
+    font-weight: 400;    /* Regular */
+    margin-bottom: 8px;  /* Mantém perto do elemento seguinte, como pede a ficha */
+}
+
+h2 {
+  font-size: 53px;     /* 40pt convertido para a web */
+  font-weight: 400;    /* Regular */
+  margin-bottom: 8px;  /* Mantém perto do elemento seguinte, como pede a ficha */
+}
+
+/* CARD TITLE */
+h3 {
+  font-size: 24px;     /* 18pt convertido para a web */
+  font-weight: 700;    /* Bold / Negrito */
+  color: #495E57;
+}
+
+/* PARAGRAPH TEXT */
+p {
+  font-size: 21px;     /* 16pt convertido para a web */
+  font-weight: 400;    /* Regular */
+  line-height: 1.5;    /* Altura de linha exigida na ficha */
+  max-width: 65ch;     /* Limita a largura para garantir leitura confortável */
+  
+  /* Força todo o texto a encostar à esquerda */
+  text-align: left;    
+  margin-left: 0;      
+  margin-right: auto;
+}
+
+
+.lead-text {
+  font-size: 24px;     /* 18pt */
+  font-weight: 500;    /* Medium */
+}
+
+/* HIGHLIGHT TEXT - Usar em preços ou etiquetas */
+.highlight-text {
+  font-size: 16px;     /* 16pt */
+  font-weight: 600;    /* Medium */
+  color: #EE9972;
+}
+
+.container {
+    max-width: 925px;
+    margin: 25px auto;
+    width: 100%;
+}
+
+header{
+    margin-top: 20px;
+}
+
+header>img{
+    width: 300px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+}
+
+.heroBackground{
+    background-color:#495E57;
+    width:100%;
+}
+
+#heroSection{
+    max-width:925px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    padding:40px 0;
+}
+
+#heroSection h1{
+    color: #F4CE14;
+}
+
+#heroSection h2,p{
+    color: #ffffff;
+}
+
+.heroText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.heroImage{
+    display: block;
+    width: 300px;
+    height: 300px;
+    justify-self: end;
+}
+
+.heroImage>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #F4CE14;
+    border: none;
+    font-weight: 600;
+}
+
+#headerHighlights .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cardsSection{
+    width: 100%;
+    margin-top: 40px;
+}
+
+#cardContent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.cardImage{
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.cardImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+
+}
+
+.cardHeader{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+    
+}
+
+.card{
+    background-color: #EDEFEE;
+    border-radius: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cardDescription {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1; 
+  gap: 16px;
+}
+
+.cardHeader h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.cardDescription p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+  color: #111;
+}
+
+.cardDescription a {
+  align-self: flex-start; 
+  text-decoration: none;
+  color: #111;
+  font-weight: 700;
+  margin-top: auto; 
+}
+
+.cardDescription a:hover {
+  text-decoration: underline;
+}
+
+
+.footerBackground{
+    background-color:#495E57;
+    width:100%;
+    margin-top:40px;
+}
+
+
+.footerBackground .container{
+    max-width:925px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    padding:40px 0;
+}
+
+footer section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.footerNav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 0;
+}
+
+.footerNav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    list-style: none;
+}
+
+.footerNav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+footer img{
+    width: 80px;
+}
+
+.footerTitle{
+    color: #fff;
+}
+
+#socialLinks a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.footerContacts{
+    font-size: 20px;
+    color: #fff;
+}
+
+
+@media (max-width: 1024px) {
+
+}

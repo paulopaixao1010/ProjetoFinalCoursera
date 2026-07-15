@@ -6,9 +6,9 @@ function Header() {
   
 
   return (
-    <>
-        <img src={logo} alt='Logotipo Little Lemon'/>
-    </>
+    <header>
+      <img src={logo} alt='Logotipo Little Lemon'/>
+    </header>
   )
 }
 
