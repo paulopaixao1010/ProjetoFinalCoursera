@@ -448,6 +448,118 @@ footer img{
 }
 
 
+#booking-form {
+    padding: 40px 20px;
+    margin-top: 20px
+}
+
+#booking-form .container {
+    max-width: 500px;
+}
+
+#booking-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #EDEFEE;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+
+#booking-form label {
+    font-weight: 700;
+    color: #333333;
+}
+
+
+#booking-form input,
+#booking-form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+#booking-form button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+#booking-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+/* =========================
+   BOOKINGS TABLE
+========================= */
+
+#bookings {
+    padding: 40px 20px;
+}
+
+
+#bookings h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+#bookings .container {
+    max-width: 925px;
+    overflow-x: auto;
+}
+
+
+#bookings table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+#bookings thead {
+    background-color: #495E57;
+    color: white;
+}
+
+
+#bookings th,
+#bookings td {
+    padding: 16px;
+    text-align: center;
+}
+
+
+#bookings th {
+    font-weight: 700;
+}
+
+
+#bookings tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+
+#bookings tbody tr:hover {
+    background-color: #FBDABB;
+}
+
+
+#bookings tbody tr:last-child {
+    border-bottom: none;
+}
+
+
 @media (max-width: 600px) {
 
   /* ---------- Tipografia ---------- */
