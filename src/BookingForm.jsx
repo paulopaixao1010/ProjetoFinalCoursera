@@ -1,8 +1,6 @@
 function BookingForm(props) {
    
     const getIsFormValid = () => {
-        const selectedDate = new Date(props.date);
-        const day = selectedDate.getDay();
         return (
             props.date !== "" &&
             props.hour !== "" &&
@@ -45,7 +43,7 @@ function BookingForm(props) {
                             type:"UPDATE",
                             date:e.target.value
                     })
-                    }}/>
+                    }} min={new Date().toISOString().split("T")[0]} required/>
 
             <label htmlFor="res-time">Choose time</label>
             <select id="res-time" value={props.hour} onChange={(e) => { 
