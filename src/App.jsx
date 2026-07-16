@@ -2,8 +2,10 @@ import Nav from "./Nav";
 import Homepage from "./HomePage";
 import Footer from "./Footer";
 import Header from "./Header";
+import BookingPage from "./BookingPage"
 
 import { Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
@@ -14,8 +16,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/reservations" element={<BookingPage />} />
       </Routes>
-
-      <Homepage />
+      
       <Footer />
     </>
   );
