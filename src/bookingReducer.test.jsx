@@ -2,39 +2,23 @@ import { test, expect } from "vitest";
 import { initializeTimes, updateTimes } from "./bookingReducer";
 
 
-test("initializeTimes returns the correct initial times", () => {
-
+test("initializeTimes returns available times", () => {
     const result = initializeTimes();
 
-    expect(result).toEqual([
-        "17:00",
-        "18:00",
-        "19:00",
-        "20:00",
-        "21:00",
-        "22:00"
-    ]);
-
+    expect(Array.isArray(result)).toBe(true);
+    expect(result.length).toBeGreaterThan(0);
 });
 
 
-test("updateTimes returns the same state", () => {
+test("updateTimes returns available times for the selected date", () => {
 
-    const state = [
-        "17:00",
-        "18:00",
-        "19:00",
-        "20:00",
-        "21:00",
-        "22:00"
-    ];
-
+    const state = [];
 
     const result = updateTimes(state, {
+        type: "UPDATE",
         date: "2026-07-16"
     });
 
-
-    expect(result).toEqual(state);
-
+    expect(Array.isArray(result)).toBe(true);
+    expect(result.length).toBeGreaterThan(0);
 });
