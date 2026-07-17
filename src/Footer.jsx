@@ -1,6 +1,7 @@
 
 import './App.css'
 import logoLemon from './assets/logoLemon.png'
+import { Link } from "react-router-dom";
 function Footer() {
   
 
@@ -16,12 +17,12 @@ function Footer() {
           <nav className='footerNav'>
             <h3 className='text-secondary'>Doormat Navigation</h3>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Reservations</a></li>
-              <li><a href="#">Order Online</a></li>
-              <li><a href="#">Login</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><a href="/#about">About</a></li>
+              <li><a href="/#cardsSection">Menu</a></li>
+              <li><Link to="/reservations">Reservations</Link></li>
+              <li><a href="/#order-online">Order Online</a></li>
+              <li><a href="/#login">Login</a></li>
             </ul>
           </nav>
           <section>
