@@ -148,6 +148,7 @@ button:hover{
     width: 100%;
 }
 
+/*HEADER*/
 header{
     margin-top: 20px;
 }
@@ -155,6 +156,8 @@ header{
 header>img{
     width: 300px;
 }
+
+/*NAVBAR*/
 
 nav{
     display: flex;
@@ -180,6 +183,8 @@ nav a:hover {
   color: #F4CE14;
   font-weight: 600;
 }
+
+/*HERO SECTION*/
 
 .heroBackground{
     background-color:#495E57;
@@ -216,6 +221,8 @@ nav a:hover {
     object-fit: cover;
     border-radius: 16px;
 }
+
+/*SPECIALS*/
 
 .specialsHeader{
     display: flex;
@@ -281,23 +288,7 @@ nav a:hover {
   font-weight: 700;
   color: #111;
 }
-/*
-.cardDescription p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: left;
-  margin: 0;
-  color: #111;
-}
 
-.cardDescription a {
-  align-self: flex-start; 
-  text-decoration: none;
-  color: #111;
-  font-weight: 700;
-  margin-top: auto; 
-}*/
 .cardDescription a {
   align-self: flex-start; 
 }
@@ -305,6 +296,8 @@ nav a:hover {
 .cardDescription a:hover {
   text-decoration: underline;
 }
+
+/*REVIEWS*/
 
 
 #testimonials{
@@ -352,6 +345,9 @@ nav a:hover {
     justify-content: center;
 }
 
+
+/*ABOUT SECTION*/
+
 #about{
     padding: 40px 20px;
 }
@@ -392,6 +388,7 @@ nav a:hover {
     z-index: 2;
 }
 
+/*FOOTER*/
 
 .footerBackground{
     background-color:#495E57;
@@ -465,6 +462,9 @@ footer img{
     color: #fff;
 }
 
+/*RESERVATION PAGE*/
+
+/*FORM SECTION*/
 
 #booking-form {
     padding: 40px 20px;
@@ -515,9 +515,7 @@ footer img{
 
 
 
-/* =========================
-   BOOKINGS TABLE
-========================= */
+/* BOOKINGS TABLE */
 
 #bookings {
     padding: 40px 20px;
