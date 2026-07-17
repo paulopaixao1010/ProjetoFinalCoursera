@@ -35,6 +35,7 @@ function BookingForm(props) {
   return (
     <section id="booking-form" className="bg-primary">
         <div className="container">
+            <h1>Reserve a table</h1>
             <form onSubmit={handleSubmit}>
             <label htmlFor="res-date">Choose date</label>
             <input type="date"id="res-date" value={props.date} onChange={(e) => { 
