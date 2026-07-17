@@ -1,5 +1,7 @@
 
-import restaurantFood from './assets/restauranfood.jpg'
+import marioAndAdrianA from './assets/MarioandAdrianA.jpg'
+import marioAndAdrianB from './assets/MarioandAdrianB.jpg' 
+import restaurant from './assets/restauranfood.jpg'
 
 function Chicago() {
   return (
@@ -15,13 +17,13 @@ function Chicago() {
 
           <div className="aboutImages">
             <img
-                src={restaurantFood}
+                src={restaurant}
                 alt="Restaurant"
                 className="imageLeft"
             />
 
             <img
-                src={restaurantFood}
+                src={marioAndAdrianB}
                 alt="Chef"
                 className="imageRight"
             />

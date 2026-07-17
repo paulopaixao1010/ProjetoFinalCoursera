@@ -8,7 +8,10 @@ function Footer() {
     <>
       <footer className="footerBackground">
         <div className="container">
-          <img src={logoLemon} alt='Logo Little Lemon'/>
+          <div className='footerImg'>
+            <img src={logoLemon} alt='Logo Little Lemon'/>
+          </div>
+          
           
           <nav className='footerNav'>
             <h3 className='text-secondary'>Doormat Navigation</h3>
@@ -22,6 +25,7 @@ function Footer() {
             </ul>
           </nav>
           <section>
+            <h3 className='text-secondary'>Contact</h3>
             <span className='footerContacts'>Address</span>
             <span className='footerContacts'>Phone Number</span>
             <span className='footerContacts'>Email</span>

@@ -3,26 +3,39 @@ import ReviewCard from "./ReviewCard";
 import random1 from "./assets/random1.jpg";
 import random2 from "./assets/random2.jpg";
 import random3 from "./assets/random3.jpg";
+import random4 from "./assets/random4.jpg";
 
 function CustomersSay() {
     const reviews = [
     {
-        review: "Very Good!",
-        name: "Joe",
-        image: random1,
-        rating: 4
+        review: "“Seriously cannot stop thinking about the Turkish Mac n’ Cheese!!”",
+        name: "Sara Lopez",
+        image: random4,
+        rating: 4,
+        username:"Sara72"
+
     },
     {
-        review: "Very Good!",
-        name: "Jack",
+        review: "“We had such a great time celebrating my grandmothers bitthday!”",
+        name: "Jon Do",
         image: random2,
-        rating: 4
+        rating: 4,
+        username:"Johnny_Utah"
     },
     {
-        review: "Very Good!",
-        name: "Elene",
-        image: random3,
-        rating: 4
+        review: "“Best Feta Salad in town. Flawless everytime!”",
+        name: "Sara Lopez",
+        image: random4,
+        rating: 4,
+        username:"Sara72"
+    },
+    {
+        review: "“Such a chilled out atmosphere - love it!”",
+        name: "Sara Lopez",
+        image: random4,
+        rating: 4,
+        username:"Sara72"
+
     }
     ];
 
@@ -40,6 +53,8 @@ function CustomersSay() {
                     name={review.name}
                     rating={review.rating}
                     review={review.review}
+                    username={review.username 
+                    }
                 />
                 ))}
             </section>
